@@ -145,6 +145,85 @@ button {
   margin-bottom: 2rem;
 }
 
+/* about */
+
+.about {
+  margin-top: 10rem;
+  padding-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.about__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.about__desc {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.about__image {
+  width: 70%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+  outline-offset: 0.5rem;
+  transition: all 0.3s;
+  margin-left: 4rem;
+}
+
+.about__image:hover {
+  outline: 0.8rem solid var(--text-color);
+  transform: scale(1.1);
+}
+
+/* float-grid */
+
+.grid {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class^="col-"] {
+  float: left;
+}
+
+[class^="col-"]:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.col-1-of-2 {
+  width: calc((100% - 2rem) / 2);
+}
+
+/* typhography */
+
+.heading {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 4rem;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.heading:hover {
+  transform: skewY(-2deg) skewX(-15deg) scale(1.1);
+}
+
 /* buttons */
 
 .btn {
