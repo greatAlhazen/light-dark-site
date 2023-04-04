@@ -179,6 +179,51 @@ button {
   transform: scale(1.1);
 }
 
+/* services */
+
+.services {
+  margin-top: 15rem;
+  padding-bottom: 3rem;
+}
+
+/* card flexbox */
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--card-color);
+  max-width: 30rem;
+  padding: 2rem;
+  color: var(--bg-color);
+  border-radius: 5px;
+}
+
+.card > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.card__photo {
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.card__title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.card__desc {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
 /* float-grid */
 
 .grid {
