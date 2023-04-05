@@ -15,6 +15,15 @@
     <title>Dark light app</title>
   </head>
   <body>
+    <!-- theme-toggle -->
+    <div class="theme-toggle">
+      <i class="fas fa-sun theme-toggle__icon"></i>
+      <label class="theme-switch">
+        <input type="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+
     <!-- header -->
     <header class="header" id="home">
       <!-- navbar -->
@@ -122,6 +131,41 @@
             nihil velit beatae? Lorem, ipsum dolor sit amet consectetur
             adipisicing elit. Impedit nihil velit beatae?
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+      <h1 class="heading">Contact us</h1>
+      <div class="contact__container">
+        <div class="contact__left">
+          <div class="contact-info">
+            <i class="fa-solid fa-phone contact-info__icon"></i>
+            <h4 class="contact-info__title">Our Phone:</h4>
+            <h5 class="contact-info__desc">+23645894</h5>
+          </div>
+          <div class="contact-info">
+            <i class="fa-solid fa-map-location-dot contact-info__icon"></i>
+            <h4 class="contact-info__title">Our location:</h4>
+            <h5 class="contact-info__desc">location,location</h5>
+          </div>
+        </div>
+        <div class="contact__right">
+          <form action="#" class="form">
+            <h2 class="form__heading">Connect with us</h2>
+            <div class="form__box">
+              <input type="text" class="form__input" id="name" required />
+              <label for="name" class="form__label">Your name: </label>
+            </div>
+            <div class="form__box">
+              <input type="text" class="form__input" id="name" required />
+              <label for="name" class="form__label">Your email: </label>
+            </div>
+            <div class="form__box">
+              <button class="btn">Send now</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
