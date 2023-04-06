@@ -281,6 +281,7 @@ button {
   flex-direction: column;
   gap: 5rem;
   border: 2px solid var(--text-color);
+  border-radius: 5px;
   padding: 2rem 0;
   color: var(--text-color);
 }
